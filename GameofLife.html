@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Conway's Game of Life</title>
+<style>
+	#grid, #grid td {
+		border: 1px solid black;
+		border-collapse: collapse;
+	}
+	#grid td {
+		height: 5px;
+		width: 5px;
+	}
+	#grid td.alive {
+		background-color: black;
+	}
+</style>
+</head>
+<body>
+	<table id='grid'></table>
+	<form>
+		<button id='play' type="button">Play/Pause</button>
+		<button id='next' type="button">Step By One</button>
+		<select id='speed'>
+			<option>x1</option>
+			<option selected>x2</option>
+			<option>x4</option>
+			<option>x8</option>
+		</select>
+		<select id='size'>
+			<option>32x24</option>
+			<option selected>64x48</option>
+			<option>128x96</option>
+			<option>256x192</option>
+		</select>
+		<button id='reset' type="button">Clear</button>
+	</form>
+	<script src="scripts/GameofLife.class.js"></script>
+	<script src="scripts/GameUI.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="openlib/mocha.min.css">
+  <script src="openlib/mocha.min.js"></script>
+  <script src="openlib/chai.min.js"></script>
+  <script>
+    mocha.setup('bdd');
+    let assert = chai.assert;
+  </script>
+</head>
+<body>
+  <script src="scripts/GameofLife.class.js"></script>
+  <script src="scripts/GameofLife.test.js"></script>
+  <div id="mocha"></div>
+  <script>
+    mocha.run();
+  </script>
+</body>
+</html>
